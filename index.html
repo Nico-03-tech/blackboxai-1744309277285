@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kinder Chatbot - Dein kreativer Freund!</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .chat-bubble {
+            border-radius: 20px;
+            padding: 15px;
+            margin: 10px;
+            max-width: 80%;
+        }
+        .user-bubble {
+            background-color: #E3F2FD;
+            margin-left: auto;
+        }
+        .bot-bubble {
+            background-color: #F5F5F5;
+            margin-right: auto;
+        }
+        body {
+            background-color: #FAFAFA;
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+        }
+        .button-fun {
+            background-color: #FF4081;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 25px;
+            font-size: 1.2em;
+            transition: transform 0.2s;
+        }
+        .button-fun:hover {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+    <nav class="bg-purple-600 p-4 text-white">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold">🤖 Kinder Chatbot</a>
+            <div class="space-x-4">
+                <a href="index.html" class="hover:text-purple-200">Start</a>
+                <a href="chatbot.html" class="hover:text-purple-200">Chatbot</a>
+                <a href="about.html" class="hover:text-purple-200">Über uns</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container mx-auto p-4">
+        <div class="text-center py-12">
+            <h1 class="text-4xl font-bold mb-4">👋 Hallo! Ich bin dein kreativer Chatbot-Freund!</h1>
+            <p class="text-xl mb-8">Ich kann dir helfen, tolle Bilder und Videos zu erstellen! Lass uns zusammen Spaß haben!</p>
+            <a href="chatbot.html" class="button-fun inline-block">
+                Los geht's! 🚀
+            </a>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
+            <div class="bg-white p-6 rounded-lg shadow-lg text-center">
+                <div class="text-4xl mb-4">🎨</div>
+                <h3 class="text-xl font-bold mb-2">Erstelle Bilder</h3>
+                <p>Sage mir einfach, was du dir vorstellst, und ich male es für dich!</p>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-lg text-center">
+                <div class="text-4xl mb-4">🎥</div>
+                <h3 class="text-xl font-bold mb-2">Mache Videos</h3>
+                <p>Erzähle mir deine Geschichte, und ich mache daraus ein tolles Video!</p>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-lg text-center">
+                <div class="text-4xl mb-4">🌈</div>
+                <h3 class="text-xl font-bold mb-2">Sei kreativ</h3>
+                <p>Gemeinsam können wir tolle Sachen erschaffen!</p>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-gray-100 mt-12 py-6">
+        <div class="container mx-auto text-center">
+            <p>🌟 Dein freundlicher Chatbot - Gemacht für Kinder 🌟</p>
+        </div>
+    </footer>
+</body>
+</html>
