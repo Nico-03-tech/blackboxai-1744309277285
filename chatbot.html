@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sprich mit deinem Chatbot!</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .chat-bubble {
+            border-radius: 20px;
+            padding: 15px;
+            margin: 10px;
+            max-width: 80%;
+        }
+        .user-bubble {
+            background-color: #E3F2FD;
+            margin-left: auto;
+        }
+        .bot-bubble {
+            background-color: #F5F5F5;
+            margin-right: auto;
+        }
+        body {
+            background-color: #FAFAFA;
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <nav class="bg-purple-600 p-4 text-white">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold">🤖 Kinder Chatbot</a>
+            <div class="space-x-4">
+                <a href="index.html" class="hover:text-purple-200">Start</a>
+                <a href="chatbot.html" class="hover:text-purple-200">Chatbot</a>
+                <a href="about.html" class="hover:text-purple-200">Über uns</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container mx-auto p-4">
+        <h1 class="text-3xl font-bold text-center mb-4">Sprich mit deinem Chatbot!</h1>
+        <div id="chat-container" class="border border-gray-300 rounded-lg p-4 h-96 overflow-y-scroll mb-4">
+            <!-- Chat messages will be displayed here -->
+        </div>
+        <form id="chat-form" class="flex">
+            <input 
+                type="text" 
+                id="user-input" 
+                class="flex-grow border border-gray-300 rounded-lg p-2" 
+                placeholder="Schreibe hier..." 
+                required 
+                minlength="1"
+                autocomplete="off"
+                aria-label="Deine Nachricht">
+            <button type="submit" class="bg-blue-500 text-white rounded-lg p-2 ml-2">Senden</button>
+        </form>
+    </main>
+
+    <footer class="bg-gray-100 mt-12 py-6">
+        <div class="container mx-auto text-center">
+            <p>🌟 Dein freundlicher Chatbot - Gemacht für Kinder 🌟</p>
+        </div>
+    </footer>
+
+    <script src="js/chatbot.js"></script>
+</body>
+</html>
